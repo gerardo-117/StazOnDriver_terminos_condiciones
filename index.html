@@ -95,7 +95,6 @@
 
         .destacado-stripe {
             border-left: 4px solid #635bff;
-            /* Color oficial de Stripe para el toque corporativo */
             background-color: rgba(99, 91, 255, 0.05);
             padding: 15px;
             border-radius: 0 8px 8px 0;
@@ -104,6 +103,38 @@
 
         .destacado-stripe strong {
             color: #7a73ff;
+        }
+
+        /* Estilos del Botón de Regreso */
+        .contenedor-boton {
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+
+        .btn-regresar {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--azul-premium) 0%, #1565c0 100%);
+            color: var(--texto-blanco);
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 12px rgba(30, 136, 229, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-regresar:hover {
+            background: linear-gradient(135deg, var(--azul-brillante) 0%, var(--azul-premium) 100%);
+            box-shadow: 0 6px 16px rgba(30, 136, 229, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-regresar:active {
+            transform: translateY(0);
         }
 
         footer {
@@ -163,10 +194,17 @@
 
         <div class="seccion-tarjeta">
             <h2>4. Obligaciones del Conductor</h2>
-            <p>El Usuario se compromete a proporcionar información verídica, vigente y comprobable durante su registro.
+            <p>El Usuario se compensa a proporcionar información verídica, vigente y comprobable durante su registro.
                 Asimismo, asume la responsabilidad total de mantener la confidencialidad de sus credenciales de acceso a
                 la aplicación, eximiendo a Stazondriver de cualquier uso indebido derivado de la negligencia en la
                 custodia de su cuenta.</p>
+        </div>
+
+        <!-- Botón para regresar al flujo de la App -->
+        <div class="contenedor-boton">
+            <a href="javascript:void(0);" onclick="window.close();" class="btn-regresar">
+                Volver al Registro
+            </a>
         </div>
 
     </main>
