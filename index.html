@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones - Stazondriver</title>
+    <link rel="shortcut icon" href="./iconoapp.png" type="image/x-icon">
+    <style>
+        /* Estilos Premium Oscuro y Azul Eléctrico */
+        :root {
+            --bg-principal: #0b0f19;
+            --bg-tarjeta: #151d30;
+            --azul-premium: #1e88e5;
+            --azul-brillante: #42a5f5;
+            --texto-blanco: #ffffff;
+            --texto-secundario: #94a3b8;
+            --borde-sutil: #24324f;
+        }
+
+        body {
+            background-color: var(--bg-principal);
+            color: var(--texto-secundario);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .header-premium {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            border-bottom: 2px solid var(--azul-premium);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header-premium h1 {
+            color: var(--texto-blanco);
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-premium p {
+            color: var(--azul-brillante);
+            margin: 10px 0 0 0;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .contenido-legal {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .seccion-tarjeta {
+            background-color: var(--bg-tarjeta);
+            border: 1px solid var(--borde-sutil);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: var(--texto-blanco);
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--borde-sutil);
+            padding-bottom: 8px;
+        }
+
+        h2::before {
+            content: "▪";
+            color: var(--azul-brillante);
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .destacado-stripe {
+            border-left: 4px solid #635bff;
+            /* Color oficial de Stripe para el toque corporativo */
+            background-color: rgba(99, 91, 255, 0.05);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 15px;
+        }
+
+        .destacado-stripe strong {
+            color: #7a73ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+            color: #64748b;
+            border-top: 1px solid var(--borde-sutil);
+            background-color: #090d16;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header-premium">
+        <h1>Términos y Condiciones de Uso</h1>
+        <p>Plataforma Digital Stazondriver</p>
+    </header>
+
+    <main class="contenido-legal">
+
+        <div class="seccion-tarjeta">
+            <h2>1. Declaración de Cumplimiento y Aceptación</h2>
+            <p>El presente documento constituye un contrato vinculante entre el usuario conductor (en adelante, "El
+                Usuario") y Stazondriver. Al completar el proceso de registro y marcar la casilla de aceptación, El
+                Usuario manifiesta su consentimiento expreso, entendimiento y conformidad absoluta con los términos,
+                directrices y políticas operativas aquí descritas.</p>
+        </div>
+
+        <div class="seccion-tarjeta">
+            <h2>2. Protección de Datos y Privacidad de Grado Empresarial</h2>
+            <p>En Stazondriver, la confidencialidad de su información es nuestra máxima prioridad. Nos comprometemos
+                formalmente a proteger, salvaguardar y encriptar toda la información sensible recopilada durante el
+                registro, incluyendo nombres, documentación oficial, datos vehiculares y de geolocalización.</p>
+            <p>Toda transferencia de información se realiza bajo protocolos de seguridad SSL/TLS de alta gama,
+                asegurando que ningún tercero no autorizado tenga acceso a sus bases de datos. Los datos compartidos
+                serán utilizados única y exclusivamente para la optimización operativa de la plataforma y el correcto
+                emparejamiento de servicios de transporte.</p>
+        </div>
+
+        <div class="seccion-tarjeta">
+            <h2>3. Infraestructura de Pagos de Alta Seguridad (Stripe)</h2>
+            <p>La arquitectura financiera de Stazondriver está diseñada bajo estándares internacionales de cumplimiento
+                bancario. Con el fin de mitigar riesgos y garantizar la máxima transparencia en la dispersión de fondos
+                y procesamiento de cobros, todas las transacciones monetarias dentro de la aplicación son gestionadas
+                externamente a través de la pasarela de pagos líder a nivel global.</p>
+
+            <div class="destacado-stripe">
+                <p><strong>Garantía de Procesamiento vía Stripe:</strong> Stazondriver no almacena, procesa ni manipula
+                    de forma directa números de tarjetas de crédito o débito, ni credenciales bancarias. Toda la
+                    información financiera es procesada por <strong>Stripe</strong>, plataforma que cuenta con la
+                    certificación de seguridad más estricta de la industria financiera: <em>PCI Compliance Nivel 1
+                        (PCI-DSS)</em>.</p>
+            </div>
+        </div>
+
+        <div class="seccion-tarjeta">
+            <h2>4. Obligaciones del Conductor</h2>
+            <p>El Usuario se compromete a proporcionar información verídica, vigente y comprobable durante su registro.
+                Asimismo, asume la responsabilidad total de mantener la confidencialidad de sus credenciales de acceso a
+                la aplicación, eximiendo a Stazondriver de cualquier uso indebido derivado de la negligencia en la
+                custodia de su cuenta.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Stazondriver. Todos los derechos reservados. <br>
+        Este documento se actualiza periódicamente para cumplir con las normativas legales vigentes.
+    </footer>
+
+</body>
+
+</html>
